@@ -3,7 +3,7 @@ network:
   version: 2
   renderer: NetworkManager
   ethernets:
-   ens33:
+   enp0s3:
     dhcp4: false
     addresses: [192.168.5.10/24]
     routes:
@@ -11,4 +11,4 @@ network:
        via: 192.168.5.100
     nameservers:
      search: [juangg.edu]
-     addresses: [192.168.5.100, 192.168.5.200]
+     addresses: [192.168.5.200,8.8.8.8]
