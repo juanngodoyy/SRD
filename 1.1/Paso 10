@@ -8,7 +8,7 @@ network:
     addresses: [192.168.5.15/24]
     routes:
      - to: default
-       via: 192.168.5.100
+       via: 192.168.5.150
     nameservers:
      search: [juangg.edu]
-     addresses: [192.168.5.200, 8.8.8.8]
+     addresses: [192.168.5.250,8.8.8.8]
