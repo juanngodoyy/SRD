@@ -1,0 +1,7 @@
+# Let NetworkManager manage all decives on this system
+network:
+ version: 2
+ renderer: networkd
+ ethernets:
+  enp0s3:
+   dhcp4: true
