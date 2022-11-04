@@ -1,0 +1,24 @@
+default-lease-time 9000;
+max-lease-time 18000;
+ subnet 192.168.5.0 netmask 255.255.255.128 {
+   range 192.168.5.10 192.168.5.90;
+   option routers 192.168.5.1;
+   option broadcast-address 192.168.5.128;
+   group {
+    option domain-name-servers 8.8.8.8;
+    host cliente1 {
+      hardware ethernet 08:00:27:EE:7E:3C;
+      fixed-address 192.168.5.12;
+    }
+    host cliente2 {
+      hardware ethernet 08:00:27:10:48:BB;
+      fixed-address 192.168.5.13;
+    }
+
+   }
+ }
+ subnet 192.168.5.128 netmask 255.255.255.128 {
+   range 192.168.5.140 192.168.5.190;
+   option routers 192.168.5.129;
+   option broadcast-address 192.168.5.255;
+ }
