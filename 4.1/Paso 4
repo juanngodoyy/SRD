@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+
+  ServerAdmin root@juangg.edu
+  DocumentRoot /var/www/html/juan/
+  DirectoryIndex index5.html
+  
+  ErrorLog ${APACHE_LOG_DIR}/error.log
+  CustomLog ${APACHE_LOG_DIR}/access.log combined
+ 
+</VirtualHost>
