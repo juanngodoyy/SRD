@@ -8,8 +8,5 @@ $TTL    604800 ; 1 week
                               )
 					IN	NS	juangg-linux.juangg.edu.
 juangg-linux.juangg.edu.		IN	A	192.168.5.2
-user1.juangg.edu.		IN	A	192.168.5.2
-user2.juangg.edu.		IN	A	192.168.5.2
 juangg.edu.				IN	MX 10	juangg-linux.juangg.edu.
-juangg.edu.				IN	MX 10	user1.juangg.edu.
-juangg.edu.				IN	MX 10	user2.juangg.edu.
+
