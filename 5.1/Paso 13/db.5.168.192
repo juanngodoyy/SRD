@@ -3,5 +3,4 @@ $TTL 604800 ; 1 week
 				1 360000 3600 3600000 3600)
 				IN NS juangg-linux.juangg.edu.
 2				IN PTR juangg-linux.juangg.edu.
-2				IN PTR user1.juangg.edu.
-2				IN PTR user2.juangg.edu.
+
