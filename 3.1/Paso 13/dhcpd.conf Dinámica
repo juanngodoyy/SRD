@@ -1,0 +1,26 @@
+default-lease-time 600;
+max-lease-time 7200;
+ddns-updates on;
+ddns-update-style interim;
+
+update-static-leases on;
+
+ddns-domainname "juangg.edu.";
+ddns-rev-domainname "in-addr.arpa";
+
+zone juangg.edu
+	{ primary 192.168.5.2; }
+zone 5.168.192.in-addr.arpa
+	{ primary 192.168.5.2; }
+
+subnet 192.168.5.0 netmask 255.255.255.0 {
+	range 192.168.5.130 192.168.5.170;
+	option broadcast-address 192.168.5.255;
+	option subnet-mask 255.255.255.0;
+	option routers 192.168.5.1;
+	
+	host juangg-cliente {
+		hardware ethernet 08:00:27:7A:2E:AB;
+		fixed-address 192.168.5.200;
+		ddns-hostname "juangg-cliente";	}
+}
