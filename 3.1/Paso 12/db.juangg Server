@@ -1,0 +1,16 @@
+
+$TTL 604800	; 1 week
+@		IN SOA	juangg-linux.juangg.edu. root.juangg.edu. (
+				1          ; Serial no
+				360000     ; Refresh
+				3600       ; Retry
+				3600000    ; Expire
+				3600       ; Default TTL
+				)
+			                             IN NS	  juangg-linux.juangg.edu.
+			                             IN NS	  juangg-esclavo.juangg.edu.
+juangg-linux.juangg.edu.           IN A     192.168.5.2
+PC-01.juangg.edu.                  IN A     192.168.5.3
+otro. juangg.edu.                  IN A     192.168.5.4
+juangg-esclavo.juangg.edu.         IN A     192.168.5.77
+aliasjuangg                        IN CNAME juangg-linux.juangg.edu.
