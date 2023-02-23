@@ -7,4 +7,4 @@ $TTL 604800	; 1 week
 2                             IN PTR aliasjuangg.juangg.edu.
 3                             IN PTR PC-01.juangg.edu.
 77                            IN PTR juangg-esclavo.juangg.edu.
-4.5.168.192.in-addr.arpa.     IN PTR otro.juangg.edu.
+40.5.168.192.in-addr.arpa.     IN PTR otro.juangg.edu.
